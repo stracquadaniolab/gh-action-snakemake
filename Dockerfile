@@ -1,4 +1,4 @@
-FROM FROM snakemake/snakemake:v5.8.1
+FROM snakemake/snakemake:v5.8.1
 
 LABEL org.stracquadaniolab.maintainer="gh-action-snakemake"
 LABEL org.stracquadaniolab.version="0.0.1"
