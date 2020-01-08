@@ -1,0 +1,33 @@
+name: 'gh-action-snakemake'
+description: 'Running snakemake in GitHub actions.'
+
+branding:
+  icon: git-pull-request
+  color: red
+
+inputs:
+  directory:
+    description: Working directory for the execution
+    required: true
+    default: .
+  snakefile:
+    description: Snakefile containing the workflow description
+    default: Snakefile
+  args:
+    description: Additional Snakemake arguments to use
+    required: false
+    default: ''
+  stagein:
+    description: Additional steps to prepare the workflow for execution
+    required: false
+    default: ''
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.directory }}
+    - ${{ inputs.snakefile }}
+    - ${{ inputs.args }}
+    - ${{ inputs.stagein }}
+    
