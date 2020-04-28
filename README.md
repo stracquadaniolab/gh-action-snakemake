@@ -1,5 +1,5 @@
 # snakemake
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/stracquadaniolab/gh-action-snakemake)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/tag/stracquadaniolab/gh-action-snakemake)
 
 Running snakemake in GitHub actions.
 
