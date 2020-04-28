@@ -1,4 +1,5 @@
 # snakemake
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/stracquadaniolab/gh-action-snakemake)
 
 Running snakemake in GitHub actions.
 
@@ -7,10 +8,6 @@ Running snakemake in GitHub actions.
 ### `directory`
 
 **Required** The workdir for Snakemake. Default: `.`.
-
-### `snakefile`
-
-**Required** Snakefile containing the workflow description. Default: `Snakefile`.
 
 ### `snakefile`
 
